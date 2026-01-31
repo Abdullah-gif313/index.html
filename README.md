@@ -4,8 +4,6 @@
 
 <html lang="ar" dir="rtl">
 <head>
- // ...existing code...
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="موقع تعليمي متكامل عن البرمجة، الأنبياء، والحضارات">
