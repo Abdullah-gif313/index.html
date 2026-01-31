@@ -4,6 +4,112 @@
 
 <html lang="ar" dir="rtl">
 <head>
+ // ...existing code...
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="موقع تعليمي متكامل عن البرمجة، الأنبياء، والحضارات">
+  <title>موسوعة تعليمية</title>
+  <!-- add font for better appearance on phones/laptops -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Cairo", sans-serif;
+      margin: 0;
+      background: #f4f7fb;
+      color: #333;
+      line-height: 1.9;
+    }
+    header {
+      text-align: center;
+      padding: 2.5rem;
+      background: linear-gradient(90deg, #4facfe, #00f2fe);
+      color: white;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      background: #ffffff;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      /* responsive improvement: allow horizontal scroll on small screens */
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    nav a {
+      text-decoration: none;
+      background: #0066cc;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      flex: 0 0 auto; /* keep buttons from shrinking when nav scrolls */
+      white-space: nowrap;
+    }
+    nav a:hover {
+      background: #004999;
+    }
+    .container {
+      max-width: 950px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .section {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .section img {
+      width: 100%;
+      max-width: 360px;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 12px;
+      height: auto;
+    }
+    h2 {
+      color: #0066cc;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      font-size: 0.9rem;
+    }
+
+    /* Mobile / small laptop adjustments */
+    @media (max-width: 900px) {
+      .container { padding: 1.25rem; }
+      header { padding: 1.5rem; }
+      .section { padding: 1.25rem; border-radius: 12px; }
+      nav { padding: 0.6rem; gap: 8px; }
+      nav a { padding: 8px 10px; font-size: 0.85rem; }
+      h1 { font-size: 1.6rem; }
+      h2 { font-size: 1.1rem; }
+    }
+
+    @media (max-width: 480px) {
+      body { line-height: 1.6; }
+      header { padding: 1rem; }
+      .container { padding: 0.9rem; }
+      nav { gap: 6px; }
+      nav a { padding: 8px; font-size: 0.82rem; border-radius: 10px; }
+      .section { padding: 0.9rem; margin-bottom: 1rem; }
+      .section img { max-width: 320px; }
+    }
+  </style>
+</head>
+// ...existing code...
+{ changed code }
+// ...existing code... 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="موقع تعليمي متكامل عن البرمجة، الأنبياء، والحضارات">
